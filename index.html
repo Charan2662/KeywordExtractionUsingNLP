@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Extraction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyword Extraction Tool</h1>
+    <textarea id="content" placeholder="Paste your text here..."></textarea>
+    <button onclick="extractKeywords()">Extract Keywords</button>
+    <div class="result" id="result"></div>
+    
+    <!-- Include Compromise library -->
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="script.js"></script>
+</body>
+</html>
